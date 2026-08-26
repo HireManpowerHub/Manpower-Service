@@ -548,7 +548,7 @@
     <nav class="container">
 
       <a href="#home" class="logo">
-       <img src="https://raw.githubusercontent.com/khanmohammadrupk/Manpower-Service/iroot/WhatsApp%20Image%202026-08-26%20at%207.04.04%20PM%20(1).jpeg" alt="Logo">
+       
       </a>
 
       <div class="nav-links">
@@ -969,23 +969,71 @@
       </div>
 
     </div>
-<section style="padding: 50px 20px; background-color: #f9f9f9; text-align: center;">
-    <h2 style="font-size: 28px; margin-bottom: 20px; color: #0f172a;">Available Worker Categories</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
-        <div style="background: #fff; padding: 15px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: bold;">
-            Construction Workers
-        </div>
-        <div style="background: #fff; padding: 15px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: bold;">
-            Masons & Tile Fixers
-        </div>
-        <div style="background: #fff; padding: 15px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: bold;">
-            Electricians & Plumbers
-        </div>
-        <div style="background: #fff; padding: 15px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: bold;">
-            Steel Fixers & Carpenters
-        </div>
-        <div style="background: #fff; padding: 15px 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); font-weight: bold;">
-            Cleaning & Maintenance Helpers
+<section style="<button onclick="openPopup()">Masons & Tile Fixers</button>
+
+<div id="popup" class="popup">
+  <div class="popup-box">
+    <span onclick="closePopup()" class="close">&times;</span>
+
+    <h2>Masons & Tile Fixers</h2>
+    <p>Skilled workers available for construction projects.</p>
+    <p><b>Available Workers:</b> 35</p>
+
+    <a href="https://wa.me/" class="whatsapp">
+      Message on WhatsApp
+    </a>
+  </div>
+</div>
+
+<style>
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: white;
+  width: 90%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+</style>
+
+<script>
+function openPopup() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
 
   </section>
 
