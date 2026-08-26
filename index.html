@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Manpower Service - Reliable workforce solutions for businesses."
+  />
+
+  <title>Manpower Service | Reliable Workforce Solutions</title>
+
+  <style>
+    :root {
+      --primary: #1769e0;
+      --primary-dark: #0b1f3a;
+      --light-blue: #eaf2ff;
+      --light: #f5f8fc;
+      --text: #172033;
+      --muted: #667085;
+      --white: #ffffff;
+      --border: #e5ebf3;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1120px;
+      margin: auto;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* ================= BUTTONS ================= */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 21px;
+      border-radius: 8px;
+      font-weight: 700;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0f56bd;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      color: white;
+      border-color: rgba(255,255,255,0.4);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--primary-dark);
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      color: white;
+      padding: 100px 0 90px;
+      background:
+        radial-gradient(circle at 90% 20%, rgba(255,255,255,0.12), transparent 25%),
+        linear-gradient(135deg, #07182f 0%, #123b73 55%, #1769e0 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      color: #b9d5ff;
+    }
+
+    .hero h1 {
+      font-size: clamp(43px, 6vw, 70px);
+      line-height: 1.05;
+      margin-bottom: 22px;
+    }
+
+    .hero-text {
+      font-size: 18px;
+      color: #dbeafe;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-card {
+      padding: 30px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+    }
+
+    .hero-card li {
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .hero-card li:last-child {
+      border-bottom: none;
+    }
+
+    /* ================= GENERAL SECTIONS ================= */
+
+    section {
+      padding: 82px 0;
+    }
+
+    .section-head {
+      max-width: 700px;
+      text-align: center;
+      margin: 0 auto 45px;
+    }
+
+    .section-head .eyebrow {
+      color: var(--primary);
+    }
+
+    .section-head h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about .eyebrow,
+    .why .eyebrow {
+      color: var(--primary);
+    }
+
+    .about h2,
+    .why h2 {
+      font-size: 38px;
+      line-height: 1.15;
+      color: var(--primary-dark);
+      margin-bottom: 18px;
+    }
+
+    .about p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .stat {
+      padding: 25px;
+      border-radius: 14px;
+      background: var(--light);
+      border: 1px solid var(--border);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 28px;
+      color: var(--primary);
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ================= SERVICES ================= */
+
+    .services {
+      background: var(--light);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 27px;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 35px rgba(16,38,68,0.08);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      background: var(--light-blue);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ================= WHY US ================= */
+
+    .why {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .why-description {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .why-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .why-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .check {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      border-radius: 50%;
+      background: var(--light-blue);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+    }
+
+    .why-item h4 {
+      color: var(--primary-dark);
+      margin-bottom: 3px;
+    }
+
+    .why-item p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ================= CTA CARD ================= */
+
+    .cta-card {
+      padding: 35px;
+    }
+
+    .cta-card h3 {
+      font-size: 27px;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .cta-card p {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+      background: var(--primary-dark);
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-size: 40px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .contact-description {
+      color: #cbd5e1;
+      margin-bottom: 22px;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-box {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .contact-box small {
+      display: block;
+      color: #94a3b8;
+      margin-bottom: 3px;
+    }
+
+    .contact-box a {
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .contact-box a:hover {
+      color: #b9d5ff;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #061326;
+      color: #94a3b8;
+      text-align: center;
+      padding: 22px;
+      font-size: 13px;
+    }
+
+    /* ================= FLOATING WHATSAPP ================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2000;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      font-weight: bold;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.06);
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .about,
+      .why,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .section-head h2,
+      .about h2,
+      .why h2 {
+        font-size: 32px;
+      }
+
+      .contact h2 {
+        font-size: 32px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+    <nav class="container">
+
+      <a href="#home" class="logo">
+        Manpower <span>Service</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+
+        <a
+          href="https://wa.me/966593420203"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          Reliable Workforce Solutions
+        </div>
+
+        <h1>
+          The Right People.
+          The Right Workforce.
+        </h1>
+
+        <p class="hero-text">
+          Professional manpower services designed to help businesses
+          find dependable workers for construction, facilities,
+          cleaning, technical and general workforce requirements.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#contact" class="btn btn-primary">
+            Request Manpower
+          </a>
+
+          <a href="tel:+966593420203" class="btn btn-outline">
+            Call 0593420203
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <h3>
+          Workforce Support
+        </h3>
+
+        <ul>
+
+          <li>
+            Skilled & General Workers
+          </li>
+
+          <li>
+            Technicians & Helpers
+          </li>
+
+          <li>
+            Cleaning & Facility Staff
+          </li>
+
+          <li>
+            Construction Workforce
+          </li>
+
+          <li>
+            Flexible Staffing Solutions
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about">
+
+    <div class="container about">
+
+      <div>
+
+        <div class="eyebrow">
+          About Us
+        </div>
+
+        <h2>
+          Dependable manpower
+          for growing businesses.
+        </h2>
+
+        <p>
+          Manpower Service connects businesses with suitable
+          workforce solutions based on their operational needs.
+          Our focus is reliability, responsiveness and
+          professional service.
+        </p>
+
+        <p>
+          Whether you need a small team or ongoing workforce
+          support, we aim to make staffing simpler and more efficient.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+          Talk to Us
+        </a>
+
+      </div>
+
+
+      <div class="stats">
+
+        <div class="stat">
+          <strong>Reliable</strong>
+          <span>Workforce solutions</span>
+        </div>
+
+        <div class="stat">
+          <strong>Flexible</strong>
+          <span>Staffing support</span>
+        </div>
+
+        <div class="stat">
+          <strong>Professional</strong>
+          <span>Service approach</span>
+        </div>
+
+        <div class="stat">
+          <strong>Fast</strong>
+          <span>Response to inquiries</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SERVICES ================= -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div class="eyebrow">
+          Our Services
+        </div>
+
+        <h2>
+          Workforce solutions for
+          different business needs.
+        </h2>
+
+        <p>
+          Tell us what type of manpower you need and
+          we can discuss a suitable workforce solution.
+        </p>
+
+      </div>
+
+
+      <div class="cards">
+
+        <div class="card">
+
+          <div class="icon">
+            01
+          </div>
+
+          <h3>
+            General Workers
+          </h3>
+
+          <p>
+            Reliable general workers for day-to-day
+            operational and project requirements.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            02
+          </div>
+
+          <h3>
+            Skilled Workers
+          </h3>
+
+          <p>
+            Workforce support for businesses that require
+            practical skills and experience.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            03
+          </div>
+
+          <h3>
+            Technicians
+          </h3>
+
+          <p>
+            Technical workforce solutions for maintenance
+            and operational requirements.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            04
+          </div>
+
+          <h3>
+            Cleaning Staff
+          </h3>
+
+          <p>
+            Cleaning and housekeeping personnel for
+            commercial and facility needs.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            05
+          </div>
+
+          <h3>
+            Helpers
+          </h3>
+
+          <p>
+            Support staff for construction, logistics,
+            warehouses and other operations.
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="icon">
+            06
+          </div>
+
+          <h3>
+            Construction Workforce
+          </h3>
+
+          <p>
+            Manpower support for construction projects
+            and related site activities.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= WHY CHOOSE US ================= -->
+
+  <section id="why">
+
+    <div class="container why">
+
+      <div>
+
+        <div class="eyebrow">
+          Why Choose Us
+        </div>
+
+        <h2>
+          A simple and professional
+          approach to manpower.
+        </h2>
+
+        <p class="why-description">
+          We understand that the right workforce can make
+          a major difference to productivity and project delivery.
+        </p>
+
+
+        <div class="why-list">
+
+          <div class="why-item">
+
+            <div class="check">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Reliable Workforce
+              </h4>
+
+              <p>
+                Focus on dependable staffing
+                for your operational needs.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="check">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Flexible Requirements
+              </h4>
+
+              <p>
+                Discuss the type and quantity
+                of manpower you require.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="why-item">
+
+            <div class="check">
+              ✓
+            </div>
+
+            <div>
+
+              <h4>
+                Quick Communication
+              </h4>
+
+              <p>
+                Reach us directly by phone or
+                WhatsApp for inquiries.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="card cta-card">
+
+        <h3>
+          Need Manpower?
+        </h3>
+
+        <p>
+          Send us your requirement and our team
+          can discuss the next steps with you.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/966593420203?text=Hello%20Manpower%20Service%2C%20I%20need%20manpower.%20Please%20contact%20me."
+          target="_blank"
+        >
+          Message on WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= CONTACT ================= -->
+
+  <section class="contact" id="contact">
+
+    <div class="container contact-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          Contact Us
+        </div>
+
+        <h2>
+          Let's discuss your
+          manpower requirement.
+        </h2>
+
+        <p class="contact-description">
+          For manpower inquiries, call us, send a WhatsApp
+          message, or email us with your requirements.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/966593420203"
+          target="_blank"
+        >
+          Chat on WhatsApp
+        </a>
+
+      </div>
+
+
+      <div class="contact-info">
+
+        <div class="contact-box">
+
+          <small>
+            Phone / WhatsApp
+          </small>
+
+          <a href="tel:+966593420203">
+            0593420203
+          </a>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <small>
+            Email
+          </small>
+
+          <a href="mailto:khanmohammadrupok@gmail.com">
+            khanmohammadrupok@gmail.com
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 Manpower Service.
+    All rights reserved.
+
+  </footer>
+
+
+  <!-- ================= FLOATING WHATSAPP ================= -->
+
+  <a
+    href="https://wa.me/966593420203"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Contact us on WhatsApp"
+  >
+    ☎
+  </a>
+
+</body>
+</html>
+PHOTO ADD12:48 AM 8/24/2026
